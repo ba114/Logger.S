@@ -195,6 +195,14 @@
 			"min": -48
 		},
 		{
+			"header": "Atmospheric Pressure",
+			"unit": "hPa",
+			"offset": 61,
+			"mul": 0.082921489,
+			"max": 5400,
+			"min": 0
+		},
+		{
 			"header": "RON Adaption",
 			"unit": "%",
 			"offset": 63,
@@ -263,7 +271,7 @@
 		{
 			"header": "Vehicle speed",
 			"unit": "km/h",
-			"offset": 2
+			"offset": 8
 		}
 		]
 	},
