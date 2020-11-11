@@ -181,7 +181,6 @@
 			"header": "Vanos Intake",
 			"unit": "*CRK",
 			"offset": 48,
-			"length":1,
 			"max": 126,
 			"min": 80,
 			"mul": 0.375,
@@ -191,7 +190,6 @@
 			"header": "Vanos Exhaust",
 			"unit": "*CRK",
 			"offset":49,
-			"length":1,
 			"max": -80,
 			"min": -105,
 			"mul": 0.375,
@@ -254,7 +252,6 @@
 			"unit": "Nm",
 			"offset": 64,
 			"length": 2,
-			"mul": 1,
 			"max": 1024
 		},
 		{
@@ -341,7 +338,6 @@
 			"header": "Gear",
 			"unit": "#",
 			"offset": 25,
-			"mul": 1,
 			"max": 6,
 			"min": 0
 		},
