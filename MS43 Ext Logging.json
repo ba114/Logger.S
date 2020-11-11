@@ -47,10 +47,58 @@
 		{
 			"header": "Engine Load",
 			"unit": "mg/str",
-			"offset": 29,
+			"offset": 21,
 			"length": 2,
-			"mul": 0.021,
-			"max": 1000
+			"mul": 0.021194781,
+			"max": 1389
+		},
+		{
+			"header": "Engine Load MMV",
+			"unit": "mg/str",
+			"offset": 11,
+			"length": 2,
+			"mul": 0.021194781,
+			"max": 1389
+		},
+		{
+			"header": "Engine Load - Ignition",
+			"unit": "mg/str",
+			"offset": 23,
+			"length": 2,
+			"mul": 0.021194781,
+			"max": 1389
+		},
+		{
+			"header": "Engine Load - Injection",
+			"unit": "mg/str",
+			"offset": 36,
+			"length": 2,
+			"mul": 0.021194781,
+			"max": 1389
+		},
+		{
+			"header": "Engine Load - Vanos",
+			"unit": "mg/str",
+			"offset": 46,
+			"length": 2,
+			"mul": 0.021194781,
+			"max": 1389
+		},
+		{
+			"header": "MAP (Calculated)",
+			"unit": "hPa",
+			"offset": 32,
+			"length": 2,
+			"mul": 0.082921489,
+			"max": 5400
+		},
+		{
+			"header": "Valve Overlap Map)",
+			"unit": "#",
+			"offset": 32,
+			"length": 2,
+			"mul": 0.00390625,
+			"max": 8
 		},
 		{
 			"header": "Ignition Angle - Cyl 1",
@@ -151,14 +199,6 @@
 			"add": -60 
 		},
 		{
-			"header": "Battery Voltage",
-			"unit": "V",
-			"offset": 20,
-			"max": 20,
-			"min": 5,
-			"mul": 0.1015625
-		},
-		{
 			"header": "Intake Air Temp",
 			"unit": "*C",
 			"offset": 15,
@@ -219,20 +259,92 @@
 			"max": 1100
 		},
 		{
+			"header": "Rear O2 - Bank 1",
+			"unit": "V",
+			"offset": 66,
+			"length": 2,
+			"mul": 0.00488,
+			"max": 5.1
+		},
+		{
+			"header": "Rear O2 - Bank 2",
+			"unit": "V",
+			"offset": 68,
+			"length": 2,
+			"mul": 0.00488,
+			"max": 5.1
+		},
+		{
+			"header": "SAF Voltage",
+			"unit": "V",
+			"offset": 70,
+			"length": 2,
+			"mul": 0.00488,
+			"max": 5.1
+		},
+		{
+			"header": "DMTL Voltage",
+			"unit": "V",
+			"offset": 72,
+			"length": 2,
+			"mul": 0.00488,
+			"max": 5.1
+		},
+		{
+			"header": "Fuel Cap Voltage",
+			"unit": "V",
+			"offset": 74,
+			"length": 2,
+			"mul": 0.00488,
+			"max": 5.1
+		},
+		{
+			"header": "Ignition Key Voltage",
+			"unit": "V",
+			"offset": 69,
+			"mul": 0.10196078,
+			"max": 16,
+			"min": 0
+		},
+		{
+			"header": "Battery Voltage",
+			"unit": "V",
+			"offset": 59,
+			"mul": 0.10196078,
+			"max": 16,
+			"min": 0
+		},
+		{
+			"header": "Engine Cooling Fan PWM",
+			"unit": "%",
+			"offset": 58,
+			"mul": 0.390625,
+			"max": 100,
+			"min": 0
+		},
+		{
+			"header": "Idle PWM",
+			"unit": "%",
+			"offset": 50,
+			"length": 2,
+			"mul": 0.0015258793,
+			"max": 100
+		},
+		{
+			"header": "IACV PWM",
+			"unit": "%",
+			"offset": 52,
+			"length": 2,
+			"mul": 0.0015258793,
+			"max": 100
+		},
+		{
 			"header": "Gear",
 			"unit": "#",
 			"offset": 25,
 			"mul": 1,
 			"max": 6,
 			"min": 0
-		},
-		{
-			"header": "IACV",
-			"unit": "%",
-			"offset": 14,
-			"length": 2,
-			"mul": 0.001526,
-			"max": 100
 		},
 		{
 			"header": "STFT - Bank 1",
