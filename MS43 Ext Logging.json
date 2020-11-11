@@ -1,0 +1,1569 @@
+[
+	{
+		"config": 3,
+		"ecus": ["1429764", "1430844", "7526753", "7500255", "7511570", "7519308", "7545150", "7551615"],
+		"address": ["0x12", "0x08", "0x91", "0x00", "0x96", "0x00", "0x00", "0x1D"],
+		"ecuparam": [{
+			"value": 38400
+		}]
+	},
+	{
+		"config": 255,
+		"ecus": ["1429764", "1430844", "7526753", "7500255", "7511570", "7519308", "7545150", "7551615"],
+		"address": ["0x12", "0x08", "0x91", "0x01", "0xE8", "0x48", "0x00", "0x2A"],
+		"ecuparam": [{
+			"value": 125000
+		}]
+	},
+	{
+		"id": 42,
+		"ecus": ["7551615"],
+		"config": 0,
+		"address": "0x12 0x05 0x0B 0xB0 0xAC ",
+		"ecuparam": [
+		{
+			"header": "Engine Speed",
+			"unit": "RPM",
+			"offset": 6,
+			"length": 2,
+			"max": 8000,	
+			"dec": 0
+		},
+		{
+			"header": "Accelerator Position",
+			"unit": "%",
+			"offset": 9,
+			"length": 2,
+			"mul": 0.001831055
+			"max": 120
+		},
+		{
+			"header": "Throttle Position",
+			"unit": "*TPS",
+			"offset": 13,
+			"mul": 0.001831055,
+			"max": 120
+		},
+		{
+			"header": "Engine Load",
+			"unit": "mg/str",
+			"offset": 29,
+			"length": 2,
+			"mul": 0.021,
+			"max": 1000
+		},
+		{
+			"header": "Ignition Angle - Cyl 1",
+			"unit": "*CRK",
+			"offset": 26,
+			"mul": -0.375,
+			"add": 72,
+			"max": 50,
+			"min": -35
+		},
+		{
+			"header": "Ignition Angle - Cyl 2",
+			"unit": "*CRK",
+			"offset": 27,
+			"mul": -0.375,
+			"add": 72,
+			"max": 50,
+			"min": -35
+		},
+		{
+			"header": "Ignition Angle - Cyl 3",
+			"unit": "*CRK",
+			"offset": 28,
+			"mul": -0.375,
+			"add": 72,
+			"max": 50,
+			"min": -35
+		},
+		{
+			"header": "Ignition Angle - Cyl 4",
+			"unit": "*CRK",
+			"offset": 29,
+			"mul": -0.375,
+			"add": 72,
+			"max": 50,
+			"min": -35
+		},
+		{
+			"header": "Ignition Angle - Cyl 5",
+			"unit": "*CRK",
+			"offset": 30,
+			"mul": -0.375,
+			"add": 72,
+			"max": 50,
+			"min": -35
+		},
+		{
+			"header": "Ignition Angle - Cyl 6",
+			"unit": "*CRK",
+			"offset": 31,
+			"mul": -0.375,
+			"add": 72,
+			"max": 50,
+			"min": -35
+		},
+		{
+			"header": "MAF",
+			"unit": "kg/h",
+			"offset": 19,
+			"length": 2,
+			"mul": 0.25,
+			"max": 1024
+		},
+		{
+			"header": "Injection Time - Bank 1",
+			"unit": "ms",
+			"offset": 38,
+			"length": 2,
+			"mul": 0.0053333333,
+			"max": 28
+		},
+		{
+			"header": "Injection Time - Bank 2",
+			"unit": "ms",
+			"offset": 42,
+			"length": 2,
+			"mul": 0.0053333333,
+			"max": 28
+		},
+		{
+			"header": "Vanos Intake",
+			"unit": "*CRK",
+			"offset": 48,
+			"length":1,
+			"max": 126,
+			"min": 80,
+			"mul": 0.375,
+			"add": 60 
+		},
+		{
+			"header": "Vanos Exhaust",
+			"unit": "*CRK",
+			"offset":49,
+			"length":1,
+			"max": -80,
+			"min": -105,
+			"mul": 0.375,
+			"add": -60 
+		},
+		{
+			"header": "Battery Voltage",
+			"unit": "V",
+			"offset": 20,
+			"max": 20,
+			"min": 5,
+			"mul": 0.1015625
+		},
+		{
+			"header": "Intake Air Temp",
+			"unit": "*C",
+			"offset": 15,
+			"mul": 0.75,
+			"add": -48,
+			"max": 142,
+			"min": -48
+		},
+		{
+			"header": "Coolant Temp",
+			"unit": "*C",
+			"offset": 16,
+			"mul": 0.75,
+			"add": -48,
+			"max": 142,
+			"min": -48
+		},
+		{
+			"header": "Oil Temp",
+			"unit": "*C",
+			"offset": 17,
+			"mul": 0.79607843,
+			"add": -48,
+			"max": 140,
+			"min": -40
+		},
+		{
+			"header": "Radiator Temp",
+			"unit": "*C",
+			"offset": 18,
+			"mul": 0.75,
+			"add": -48,
+			"max": 142,
+			"min": -48
+		},
+		{
+			"header": "RON Adaption",
+			"unit": "%",
+			"offset": 63,
+			"mul": 0.392156863,
+			"max": 100,
+			"min": 0
+		},
+		{
+			"header": "Calculated Torque",
+			"unit": "Nm",
+			"offset": 64,
+			"length": 2,
+			"mul": 1,
+			"max": 1100
+		},
+		{
+			"header": "Gear",
+			"unit": "#",
+			"offset": 25,
+			"mul": 1,
+			"max": 6,
+			"min": 0
+		},
+		{
+			"header": "IACV",
+			"unit": "%",
+			"offset": 14,
+			"length": 2,
+			"mul": 0.001526,
+			"max": 100
+		},
+		{
+			"header": "STFT - Bank 1",
+			"unit": "%",
+			"offset": 40,
+			"length": 2,
+			"mul": 0.0015258789,
+			"add": -50,
+			"max": 50,
+			"min": -50
+		},
+		{
+			"header": "STFT - Bank 2",
+			"unit": "%",
+			"offset": 44,
+			"length": 2,
+			"mul": 0.0015258789,
+			"add": -50,
+			"max": 50,
+			"min": -50
+		},
+		{
+			"header": "Knock 1 V",
+			"unit": "V",
+			"offset": 54,
+			"mul": 0.000077821,
+			"max": 5
+		},
+		{
+			"header": "Knock 2 V",
+			"unit": "V",
+			"offset": 56,
+			"mul": 0.000077821,
+			"max": 5
+		},
+		{
+			"header": "Vehicle speed",
+			"unit": "km/h",
+			"offset": 2
+		}
+		]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE0", "0xE4"],
+		"ecuparam": [{
+			"header": "RPM",
+			"unit": "RPM",
+			"max": 8160
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE3", "0x30"],
+		"ecuparam": [{
+			"header": "Load",
+			"unit": "mg/stk",
+			"paramEcus": ["7551615"],
+			"max": 1389,
+			"mul": 0.0212
+		},
+		{
+			"header": "Load",
+			"unit": "mg/stk",
+			"paramEcus": ["7545150"],
+			"address": "0x010000E32E",
+			"max": 1389,
+			"mul": 0.0212
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x00", "0xFB", "0x6E"],
+		"ecuparam": [{
+			"header": "Knock",
+			"unit": "*CRK",
+			"max": 15,
+			"mul": 0.375,
+			"add": -48
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE3", "0x2E"],
+		"ecuparam": [{
+			"header": "MAF",
+			"unit": "kg/h",
+			"paramEcus": ["7551615"],
+			"max": 2048,
+			"mul": 0.25
+		},
+		{
+			"header": "MAF",
+			"unit": "kg/h",
+			"paramEcus": ["7545150"],
+			"address": "0x010000E32C",
+			"max": 2048,
+			"mul": 0.25
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x04", "0x32"],
+		"ecuparam": [{
+			"header": "Intake Air Temp",
+			"unit": "*C",
+			"paramEcus": ["7551615"],
+			"max": 180,
+			"min": -48,
+			"mul": 0.75,
+			"add": -48
+		},
+		{
+			"header": "Intake Air Temp",
+			"unit": "*C",
+			"paramEcus": ["7545150"],
+			"address": "0x0000040422",
+			"max": 180,
+			"min": -48,
+			"mul": 0.75,
+			"add": -48
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x04", "0x33"],
+		"ecuparam": [{
+			"header": "Coolant Temp",
+			"unit": "*C",
+			"paramEcus": ["7551615"],
+			"max": 180,
+			"min": -48,
+			"mul": 0.75,
+			"add": -48
+		},
+		{
+			"header": "Coolant Temp",
+			"unit": "*C",
+			"paramEcus": ["7545150"],
+			"address": "0x0000040423",
+			"max": 180,
+			"min": -48,
+			"mul": 0.75,
+			"add":-48
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x04", "0x2F"],
+		"ecuparam": [{
+			"header": "Oil Temp",
+			"unit": "*C",
+			"paramEcus": ["7551615"],
+			"max": 180,
+			"min": -48,
+			"mul": 0.796,
+			"add": -48
+		},
+		{
+			"header": "Oil Temp",
+			"unit": "*C",
+			"paramEcus": ["7545150"],
+			"address": "0x000004041F",
+			"max": 180,
+			"min": -48,
+			"mul": 0.796,
+			"add": -48 
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE1", "0x4C"],
+		"ecuparam": [{
+			"header": "TPS",
+			"unit": "%",
+			"max": 120,
+			"mul": 0.0018310547
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x02", "0x12"],
+		"ecuparam": [{
+			"header": "Vanos Intake",
+			"unit": "*CRK",
+			"paramEcus": ["7551615"],
+			"max": 126,
+			"min": 80,
+			"mul": 0.375,
+			"add": 60 
+		},
+		{
+			"header": "Vanos Intake",
+			"unit": "*CRK",
+			"paramEcus": ["7545150"],
+			"address": "0x0000040940",
+			"max": 126,
+			"min": 80,
+			"mul": 0.375,
+			"add": 60 
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x0A", "0xE0"],
+		"ecuparam": [{
+			"header": "Vanos Exhaust",
+			"unit": "*CRK",
+			"paramEcus": ["7551615"],
+			"max": -80,
+			"min": -105,
+			"mul": 0.375,
+			"add": -60 
+		},
+		{
+			"header": "Vanos Exhaust",
+			"unit": "*CRK",
+			"paramEcus": ["7545150"],
+			"address": "0x0000040AEE",
+			"max": -80,
+			"min": -105,
+			"mul": 0.375,
+			"add": -60 
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x04", "0x0C", "0x72"],
+		"ecuparam": [{
+			"header": "STFT Bank 1",
+			"unit": "%",
+			"paramEcus": ["7551615"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789,
+			"add": -50 
+		},
+		{
+			"header": "STFT Bank 1",
+			"unit": "%",
+			"paramEcus": ["7545150"],
+			"address": "0x0100040C4E",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789,
+			"add": -50 
+		}]
+    },
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x04", "0x0D", "0xE0"],
+		"ecuparam": [{
+			"header": "STFT Bank 2",
+			"unit": "%",
+			"paramEcus": ["7551615"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789,
+			"add": -50 
+		},
+		{
+			"header": "STFT Bank 2",
+			"unit": "%",
+			"paramEcus": ["7545150"],
+			"address": "0x0100040D9E",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789,
+			"add": -50 
+		}]
+	},
+	
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x00", "0xFB", "0xAB"],
+		"ecuparam": [{
+			"header": "Ignition Angle",
+			"unit": "*CRK",
+			"max": 60,
+			"min": -24,
+			"mul": -0.375,
+			"add": 72 
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x04", "0x0C", "0x82"],
+		"ecuparam": [{
+			"header": "LTFT Bank 1",
+			"unit": "%",
+			"paramEcus": ["7551615"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789
+		},
+		{
+			"header": "LTFT Bank 1",
+			"unit": "%",
+			"paramEcus": ["7545150"],
+			"address": "0x0100040C50",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789,
+			"add": -50 
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x04", "0x0D", "0xF0"],
+		"ecuparam": [{
+			"header": "LTFT Bank 2",
+			"unit": "%",
+			"paramEcus": ["7551615"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789
+		},
+		{
+			"header": "LTFT Bank 2",
+			"unit": "%",
+			"paramEcus": ["7545150"],
+			"address": "0x0100040DAE",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015258789,
+			"add": -50 
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x04", "0x7F"],
+		"ecuparam": [{
+			"header": "Speed",
+			"unit": "km/h",
+			"paramEcus": ["7551615"],
+			"max": 255
+		},
+		{
+			"header": "Speed",
+			"unit": "km/h",
+			"paramEcus": ["7545150"],
+			"address": "0x0000040463",
+			"max": 255
+		}]
+	},
+	{
+        "ecus": ["7551615,7545150"],
+        "config": 2,
+        "address": ["0x02", "0x0E", "0x00", "0x00", "0x19"],
+        "ecuparam": [{
+            "header": "Rear O2 - Bank 1",
+            "unit": "V",
+            "max": 5,
+            "min": 0,
+            "mul": 0.00488,
+            "add": 0
+        }]
+    },
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x02", "0x0E", "0x00", "0x00", "0x1A"],
+		"ecuparam": [{
+			"header": "Rear O2 - Bank 2",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.00488
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x00", "0x00", "0x04", "0x01", "0xAC"],
+		"ecuparam": [{
+			"header": "Gear",
+			"unit": "#",
+			"paramEcus": ["7551615"],
+			"max": 6
+		},
+		{
+			"header": "Gear",
+			"unit": "#",
+			"paramEcus": ["7545150"],
+			"address": "0x00000401A7",
+			"max": 6
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE3", "0x4A"],
+		"ecuparam": [{
+			"header": "Pedal Position",
+			"unit": "%",
+			"paramEcus": ["7551615"],
+			"max": 120,
+			"mul": 0.0018310547
+		},
+		{
+			"header": "Pedal Position",
+			"unit": "#",
+			"paramEcus": ["7545150"],
+			"address": "0x010000E348",
+			"max": 120,
+			"mul": 0.0018310547
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x04", "0x0D", "0xAA"],
+		"ecuparam": [{
+			"header": "Injection Time",
+			"unit": "ms",
+			"paramEcus": ["7551615"],
+			"max": 24,
+			"mul": 0.0053333333
+		},
+		{
+			"header": "Injection Time",
+			"unit": "#",
+			"paramEcus": ["7545150"],
+			"address": "0x0100040D72",
+			"max": 24,
+			"mul": 0.0053333333
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE3", "0x3A"],
+		"ecuparam": [{
+			"header": "Injection Load",
+			"unit": "mg/stk",
+			"paramEcus": ["7551615"],
+			"max": 1389,
+			"mul": 0.0212
+		},
+		{
+			"header": "Injection Load",
+			"unit": "mg/stk",
+			"paramEcus": ["7545150"],
+			"address": "0x010000E338",
+			"max": 1389,
+			"mul": 0.0212
+		}]
+	},
+	
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x04", "0x0F", "0xD6"],
+		"ecuparam": [{
+			"header": "Calculated MAP",
+			"unit": "kPa",
+			"paramEcus": ["7551615"],
+			"max": 4000,
+			"mul": 0.082921489
+		},
+		{
+			"header": "Caclulated MAP",
+			"unit": "kPa",
+			"paramEcus": ["7545150"],
+			"address": "0x0100040F64",
+			"max": 4000,
+			"mul": 0.082921489
+		}]
+	},
+	{
+		"ecus": ["7551615,7545150"],
+		"config": 2,
+		"address": ["0x01", "0x00", "0x00", "0xE5", "0x56"],
+		"ecuparam": [{
+			"header": "DMTL Voltage",
+			"unit": "V",
+			"paramEcus": ["7551615"],
+			"max": 5,
+			"mul": 0.00488
+		},
+		{
+			"header": "DMTL Voltage",
+			"unit": "V",
+			"paramEcus": ["7545150"],
+			"address": "0x010000E54C",
+			"max": 5,
+			"mul": 0.00488
+		}]
+	},
+	
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000DA2A",
+		"ecuparam": [{
+			"header": "Engine Speed",
+			"unit": "RPM",
+			"max": 8000,	
+			"dec": 0
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000E8E4",
+		"ecuparam": [
+			{
+				"paramEcus": ["1406464", "SHINDE1"],
+				"header": "Engine Load",
+				"unit": "mg/str",
+				"max": 1024,
+				"mul": 0.021
+			},
+			{
+				"paramEcus": ["1429861"],
+				"address": "0x010000FAFC",
+				"header": "Engine Load",
+				"unit": "mg/str",
+				"max": 1024,
+				"mul": 0.021
+			},
+			{
+				"paramEcus": ["1437806"],
+				"address": "0x010000FC52",
+				"header": "Engine Load",
+				"unit": "mg/str",
+				"max": 1024,
+				"mul": 0.021
+			}
+		]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000E98D",
+		"ecuparam": [{
+			"header": "Knock Current",
+			"unit": "*CRK",
+			"max": -10,
+			"mul": 0.375,
+			"add": -48
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000DA34",
+		"ecuparam": [{
+			"header": "Mass Airflow",
+			"unit": "kg/h",
+			"max": 1024,
+			"mul": 0.25
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000006",
+		"ecuparam": [{
+			"header": "Mass Airflow V",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": ["0x02", "0x00", "0x00", "0x00", "0x07"],
+		"ecuparam": [{
+			"header": "Battery Voltage",
+			"unit": "V",
+			"max": 20,
+			"min": 5,
+			"mul": 0.1015625
+		}]
+	},
+	{
+		"config": 2,
+		"address": "0x000000E8D0",
+		"ecuparam": [{
+				"header": "Throttle Pos",
+				"unit": "%",
+				"paramEcus": ["1405854", "1429373", "1429861", "1437806", "1432401", "1440176"],
+				"address": "0x000000E8D7",
+				"max": 100,
+				"mul": 0.3921569,
+				"autoLog": true,
+				"autoLogPoint": 50,
+				"autoLogDelay": 5
+			},
+			{
+				"header": "Throttle Pos",
+				"unit": "%",
+				"paramEcus": ["1406464", "SHINDE1"],
+				"max": 100,
+				"mul": 0.3921569,
+				"autoLog": true,
+				"autoLogPoint": 50,
+				"autoLogDelay": 5
+			}
+		]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000004",
+		"ecuparam": [{
+			"header": "Throttle Pos V",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000E9E6",
+		"ecuparam": [{
+			"header": "Vanos",
+			"unit": "*CRK",
+			"max": 60,
+			"mul": 0.3745
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000E989",
+		"ecuparam": [{
+			"header": "Ignition Angle",
+			"unit": "*CRK",
+			"max": 50,
+			"min": -50,
+			"mul": 0.373,
+			"add": -23.6
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000EF7E",
+		"ecuparam": [{
+			"header": "Fuel Injector",
+			"paramEcus": ["1437806"],
+			"address": "0x010000EF96",
+			"unit": "ms",
+			"max": 20,
+			"mul": 0.004
+		},
+		{
+			"header": "Fuel Injector",
+			"paramEcus": ["1429861"],
+			"address": "0x010000ECBC",
+			"unit": "ms",
+			"max": 20,
+			"mul": 0.004
+		},
+		{
+			"header": "Fuel Injector",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"unit": "ms",
+			"max": 20,
+			"mul": 0.004
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA50",
+		"ecuparam": [{
+			"header": "Intake Air Temp",
+			"unit": "*C",
+			"max": 80,
+			"mul": 0.747,
+			"add": -48
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000000",
+		"ecuparam": [{
+			"header": "Intake Air V",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA5A",
+		"ecuparam": [{
+			"header": "Coolant Temp",
+			"unit": "*C",
+			"max": 140,
+			"mul": 0.747,
+			"add": -48
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA63",
+		"ecuparam": [{
+			"header": "Vehicle Speed",
+			"unit": "km/h",
+			"max": 255
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA36",
+		"ecuparam": [{
+			"header": "IACV",
+			"unit": "%",
+			"max": 100,
+			"mul": 0.00153
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000F01E",
+		"ecuparam": [{
+			"header": "Lambda Int 1",
+			"unit": "%",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.00152587890625,
+			"add": -50
+		},
+		{
+			"header": "Lambda Int 1",
+			"unit": "%",
+			"paramEcus": ["1429861"],
+			"address": "0x010000ED5C",
+			"max": 50,
+			"min": -50,
+			"mul": 0.00152587890625,
+			"add": -50
+		},
+		{
+			"header": "Lambda Int 1",
+			"unit": "%",
+			"paramEcus": ["1437806"],
+			"address": "0x010000F036",
+			"max": 50,
+			"min": -50,
+			"mul": 0.00152587890625,
+			"add": -50
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000F0CA",
+		"ecuparam": [{
+			"header": "Lambda Int 2",
+			"unit": "%",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.00152587890625,
+			"add": -50
+		},
+		{
+			"header": "Lambda Int 2",
+			"unit": "%",
+			"paramEcus": ["1429861"],
+			"address": "0x010000ED96",
+			"max": 50,
+			"min": -50,
+			"mul": 0.00152587890625,
+			"add": -50
+		},
+		{
+			"header": "Lambda Int 2",
+			"unit": "%",
+			"paramEcus": ["1437806"],
+			"address": "0x010000F0F2",
+			"max": 50,
+			"min": -50,
+			"mul": 0.00152587890625,
+			"add": -50
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000F028",
+		"ecuparam": [{
+			"header": "Lambda Add 1",
+			"unit": "ms",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"max": 5,
+			"min": -5,
+			"mul": 0.004,
+			"add": -131.072
+		},
+		{
+			"header": "Lambda Add 1",
+			"unit": "ms",
+			"paramEcus": ["1429861"],
+			"address": "0x010000ED66",
+			"max": 5,
+			"min": -5,
+			"mul": 0.004,
+			"add": -131.072
+		},
+		{
+			"header": "Lambda Add 1",
+			"unit": "ms",
+			"paramEcus": ["1437806"],
+			"address": "0x010000F040",
+			"max": 5,
+			"min": -5,
+			"mul": 0.004,
+			"add": -131.072
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000F0D4",
+		"ecuparam": [{
+			"header": "Lambda Add 2",
+			"unit": "ms",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"max": 5,
+			"min": -5,
+			"mul": 0.004,
+			"add": -131.072
+		},
+		{
+			"header": "Lambda Add 2",
+			"unit": "ms",
+			"paramEcus": ["1429861"],
+			"address": "0x010000EDA0",
+			"max": 5,
+			"min": -5,
+			"mul": 0.004,
+			"add": -131.072
+		},
+		{
+			"header": "Lambda Add 2",
+			"unit": "ms",
+			"paramEcus": ["1437806"],
+			"address": "0x010000F0FC",
+			"max": 5,
+			"min": -5,
+			"mul": 0.004,
+			"add": -131.072
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000F030",
+		"ecuparam": [{
+			"header": "Lambda Mult 1",
+			"unit": "%",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015259,
+			"add": -50
+		},
+		{
+			"header": "Lambda Mult 1",
+			"unit": "%",
+			"paramEcus": ["1429861"],
+			"address": "0x010000ED6E",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015259,
+			"add": -50
+		},
+		{
+			"header": "Lambda Mult 1",
+			"unit": "%",
+			"paramEcus": ["1437806"],
+			"address": "0x010000F048",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015259,
+			"add": -50
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x010000F0DC",
+		"ecuparam": [{
+			"header": "Lambda Mult 2",
+			"unit": "%",
+			"paramEcus": ["1406464", "SHINDE1"],
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015259,
+			"add": -50
+		},
+		{
+			"header": "Lambda Mult 2",
+			"unit": "%",
+			"paramEcus": ["1429861"],
+			"address": "0x010000EDA8",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015259,
+			"add": -50
+		},
+		{
+			"header": "Lambda Mult 2",
+			"unit": "%",
+			"paramEcus": ["1437806"],
+			"address": "0x010000F104",
+			"max": 50,
+			"min": -50,
+			"mul": 0.0015259,
+			"add": -50
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000001",
+		"ecuparam": [{
+			"header": "Lambda 1",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000002",
+		"ecuparam": [{
+			"header": "Lambda 2",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000E9D9",
+		"ecuparam": [{
+			"header": "Knock Global",
+			"unit": "*CRK",
+			"max": -10,
+			"mul": 0.375,
+			"add": -48
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000018",
+		"ecuparam": [{
+			"header": "Knock 1 V",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x0200000017",
+		"ecuparam": [{
+			"header": "Knock 2 V",
+			"unit": "V",
+			"max": 5,
+			"mul": 0.01952
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA65",
+		"ecuparam": [{
+			"header": "Knock 1",
+			"unit": "B",
+			"max": 255
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA68",
+		"ecuparam": [{
+			"header": "Knock 2",
+			"unit": "B",
+			"max": 255
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA67",
+		"ecuparam": [{
+			"header": "Knock 3",
+			"unit": "B",
+			"max": 255
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA69",
+		"ecuparam": [{
+			"header": "Knock 4",
+			"unit": "B",
+			"max": 255
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA66",
+		"ecuparam": [{
+			"header": "Knock 5",
+			"unit": "B",
+			"max": 255
+		}]
+	},
+	{
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"config": 2,
+		"address": "0x000000DA64",
+		"ecuparam": [{
+			"header": "Knock 6",
+			"unit": "B",
+			"max": 255
+		}]
+	},	
+	{
+		"config": 1,
+		"address": "34",
+		"ecuparam": [{
+			"header": "Wideband",
+			"unit": "AFR",
+			"max": 20,
+			"min": 10,
+			"mul": 0.002153506,
+			"add": 10.29
+		}]
+	},
+	{
+		"config": 1,
+		"address": "35",
+		"ecuparam": [{
+			"header": "Analog 2",
+			"unit": "V",
+			"max": 6,
+			"mul": 0.001221
+		}]
+	},
+	{
+		"config": 1,
+		"address": "36",
+		"ecuparam": [{
+			"header": "Analog 3",
+			"unit": "V",
+			"max": 6,
+			"mul": 0.001221
+		}]
+	},
+	{
+		"config": 1,
+		"address": "39",
+		"ecuparam": [{
+			"header": "Analog 4",
+			"unit": "V",
+			"max": 6,
+			"mul": 0.001221
+		}]
+	},
+	{
+		"config": 5,
+		"address": ["0x12", "0x05", "0x04", "0x01", "0x12"],
+		"ecuparam": [{
+			"header": "Read DTC",
+			"unit": "/dtc-ms4x.dat",
+			"value": 0
+		}]
+	},
+	{
+		"config": 5,
+		"address": ["0x12", "0x04", "0x05", "0x13"],
+		"ecuparam": [{
+			"header": "Clear DTC",
+			"unit": " ",
+			"value": 1
+		}]
+	},
+	{
+		"config": 5,
+		"address": ["0x12", "0x06", "0x43", "0xff", "0xff", "0x57"],
+		"ecuparam": [{
+			"header": "Clear adapt",
+			"unit": " ",
+			"value": 1
+		}]
+	},
+	{
+		"config": 5,
+		"ecus": ["1405854", "1429373", "1429861", "1432401", "1437806", "1440176", "1406464", "SHINDE1"],
+		"address": ["0x12", "0x09", "0x06", "0x00", "0x00", "0xD8", "0x40", "0x40"],
+		"ecuparam": [
+		{
+			"header": "Knock Table 1",
+			"unit": " ",
+			"value": 2,
+			"offset": 0
+		},
+		{
+			"header": "Knock Table 2",
+			"unit": " ",
+			"value": 2,
+			"offset": 1
+		},
+		{
+			"header": "Knock Table 3",
+			"unit": " ",
+			"value": 2,
+			"offset": 2
+		},
+		{
+			"header": "Knock Table 4",
+			"unit": " ",
+			"value": 2,
+			"offset": 3
+		},
+		{
+			"header": "Knock Table 5",
+			"unit": " ",
+			"value": 2,
+			"offset": 4
+		},
+		{
+			"header": "Knock Table 6",
+			"unit": " ",
+			"value": 2,
+			"offset": 5
+		}
+		]
+	},
+	{
+		"config": 5,
+		"ecus": ["7551615"],
+		"address": ["0x12", "0x09", "0x06", "0x00", "0x04", "0x02", "0x21", "0x40"],
+		"ecuparam": [
+		{
+			"header": "Knock Table 1",
+			"unit": " ",
+			"value": 2,
+			"offset": 0
+		},
+		{
+			"header": "Knock Table 2",
+			"unit": " ",
+			"value": 2,
+			"offset": 1
+		},
+		{
+			"header": "Knock Table 3",
+			"unit": " ",
+			"value": 2,
+			"offset": 2
+		},
+		{
+			"header": "Knock Table 4",
+			"unit": " ",
+			"value": 2,
+			"offset": 3
+		},
+		{
+			"header": "Knock Table 5",
+			"unit": " ",
+			"value": 2,
+			"offset": 4
+		},
+		{
+			"header": "Knock Table 6",
+			"unit": " ",
+			"value": 2,
+			"offset": 5
+		}
+		]
+	},
+	{
+		"config": 5,
+		"ecus": ["7545150", "7519308", "7511570"],
+		"address": ["0x12", "0x09", "0x06", "0x00", "0x04", "0x02", "0x18", "0x40"],
+		"ecuparam": [
+		{
+			"header": "Knock Table 1",
+			"unit": " ",
+			"value": 2,
+			"offset": 0
+		},
+		{
+			"header": "Knock Table 2",
+			"unit": " ",
+			"value": 2,
+			"offset": 1
+		},
+		{
+			"header": "Knock Table 3",
+			"unit": " ",
+			"value": 2,
+			"offset": 2
+		},
+		{
+			"header": "Knock Table 4",
+			"unit": " ",
+			"value": 2,
+			"offset": 3
+		},
+		{
+			"header": "Knock Table 5",
+			"unit": " ",
+			"value": 2,
+			"offset": 4
+		},
+		{
+			"header": "Knock Table 6",
+			"unit": " ",
+			"value": 2,
+			"offset": 5
+		}
+		]
+	},
+	{
+		"config": 5,
+		"ecus": ["1429764", "1430844"],
+		"address": ["0x12", "0x09", "0x06", "0x00", "0x00", "0xC4", "0x86", "0x40"],
+		"ecuparam": [
+		{
+			"header": "Knock Table 1",
+			"unit": " ",
+			"value": 2,
+			"offset": 0
+		},
+		{
+			"header": "Knock Table 2",
+			"unit": " ",
+			"value": 2,
+			"offset": 1
+		},
+		{
+			"header": "Knock Table 3",
+			"unit": " ",
+			"value": 2,
+			"offset": 2
+		},
+		{
+			"header": "Knock Table 4",
+			"unit": " ",
+			"value": 2,
+			"offset": 3
+		},
+		{
+			"header": "Knock Table 5",
+			"unit": " ",
+			"value": 2,
+			"offset": 4
+		},
+		{
+			"header": "Knock Table 6",
+			"unit": " ",
+			"value": 2,
+			"offset": 5
+		}
+		]
+	},
+	{
+		"config": 5,
+		"ecus": ["7526753", "7500255"],
+		"address": ["0x12", "0x09", "0x06", "0x00", "0x00", "0xC4", "0x86", "0x4D"],
+		"ecuparam": [
+		{
+			"header": "Knock Table 1",
+			"unit": " ",
+			"value": 2,
+			"offset": 0
+		},
+		{
+			"header": "Knock Table 2",
+			"unit": " ",
+			"value": 2,
+			"offset": 1
+		},
+		{
+			"header": "Knock Table 3",
+			"unit": " ",
+			"value": 2,
+			"offset": 2
+		},
+		{
+			"header": "Knock Table 4",
+			"unit": " ",
+			"value": 2,
+			"offset": 3
+		},
+		{
+			"header": "Knock Table 5",
+			"unit": " ",
+			"value": 2,
+			"offset": 4
+		},
+		{
+			"header": "Knock Table 6",
+			"unit": " ",
+			"value": 2,
+			"offset": 5
+		}
+		]
+	}
+]
