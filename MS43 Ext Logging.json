@@ -159,7 +159,7 @@
 			"offset": 19,
 			"length": 2,
 			"mul": 0.25,
-			"max": 1024
+			"max": 2048
 		},
 		{
 			"header": "Injection Time - Bank 1",
