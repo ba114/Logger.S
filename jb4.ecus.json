@@ -121,7 +121,7 @@
 			"unit": "%",
 			"max": 120,
 			"min": 0,
-			"mul": 0.0018310547,
+			"mul": 0.0073,
 			"add": 0,
 			"canOn": true,
 			"can": {
@@ -129,7 +129,7 @@
 				"uniqueId": 1555,
 				"offset": 2,
 				"length": 2,
-				"canMul": 0.0073,
+				"canMul": 1,
 				"canAdd": 0,
 				"canRepeat": false,
 				"canSpeed": 500,
