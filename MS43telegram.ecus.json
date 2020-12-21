@@ -143,7 +143,7 @@
 			"paramEcus": ["7551615"],
 			"max": -80,
 			"min": -105,
-			"mul": 0.375,
+			"mul": -0.375,
 			"add": -60,
 			"canOn": false
 		},
@@ -154,7 +154,7 @@
 			"address": "0x0000040AEE",
 			"max": -80,
 			"min": -105,
-			"mul": 0.375,
+			"mul": -0.375,
 			"add": -60,
 			"canOn": false
 		}]
