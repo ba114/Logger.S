@@ -169,14 +169,14 @@
 			"unit": "*CRK",
 			"max": -80,
 			"min": -105,
-			"mul": 0.375,
+			"mul": -0.375,
 			"add": -60,
 			"canOn": false,
 			"can": {
 				"messageId": 797,
 				"offset": 8,
 				"length": 1,
-				"canMul": 0.375,
+				"canMul": -0.375,
 				"canAdd": -60,
 				"canRepeat": false,
 				"canSpeed": 500
