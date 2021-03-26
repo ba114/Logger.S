@@ -22,7 +22,7 @@
 		"ecuparam": [{
 			"header": "Ambient Pressure",
 			"unit": "hPa",
-			"max": 4000,
+			"max": 5434,
 			"min": 0,
 			"mul": 0.08291626,
 			"add": 0,
@@ -47,7 +47,7 @@
 		"ecuparam": [{
 			"header": "Intake Air Temp",
 			"unit": "*C",
-			"max": 180,
+			"max": 143.5,
 			"min": -48,
 			"mul": 0.75,
 			"add": -48,
@@ -71,7 +71,7 @@
 		"ecuparam": [{
 			"header": "Coolant Temp",
 			"unit": "*C",
-			"max": 180,
+			"max": 143.5,
 			"min": -48,
 			"mul": 0.75,
 			"add": -48,
@@ -95,7 +95,7 @@
 		"ecuparam": [{
 			"header": "Oil Temp",
 			"unit": "*C",
-			"max": 180,
+			"max": 155,
 			"min": -48,
 			"mul": 0.796,
 			"add": -48,
@@ -361,7 +361,7 @@
 				"uniqueId": 1558,
 				"offset": 4,
 				"length": 1,
-				"canMul": 25.6,
+				"canMul": 25.6078431,
 				"canAdd": 0,
 				"canRepeat": false,
 				"canSpeed": 500
@@ -422,53 +422,30 @@
         "config": 2,
         "address": ["0x02", "0x0E", "0x00", "0x00", "0x19"],
         "ecuparam": [{
-            "header": "Rear O2 - Bank 1",
-            "unit": "V",
-            "max": 5,
+            "header": "Fuel Pressure",
+            "unit": "psi",
+            "max": 150,
             "min": 0,
-            "mul": 0.00488,
+            "mul": 0.588235294,
             "add": 0,
             "canOn": true,
             "can": {
                 "messageId": 1554,
-                "uniqueId": 1557,
-                "offset": 2,
+                "uniqueId": 1556,
+                "offset": 5,
                 "length": 2,
-                "canMul": 0.006044,
-                "canAdd": -3.07874772,
+                "canMul": 0.0384837,
+                "canAdd": 0,
                 "canRepeat": false,
                 "canSpeed": 500,
                 "reverseEndianness": true
             }
-        },
-        {
-            "repeated": true,
-			"hidden": true,
-            "header": "Rear O2 - Bank 1x",
-            "unit": "V",
-            "max":5.1,
-            "min": 0,
-            "mul": 0.00488,
-            "add": 0,
-            "canOn": true,
-            "can": {
-                "messageId": 1554,
-                "uniqueId": 1557,
-                "offset": 4,
-                "length": 2,
-                "canMul": 0.006044,
-                "canAdd": -3.07874772,
-                "canRepeat": false,
-                "canSpeed": 500,
-                "reverseEndianness": true
-            }
-        }
-      ]
+        }]
     },
 	{
 		"ecus": ["7551615"],
 		"config": 2,
-		"address": ["0x02", "0x0E", "0x00", "0x00", "0x1A"],
+		"address": ["0x01", "0x00", "0x00", "0xE1", "0x38"],
 		"ecuparam": [{
 			"header": "Boost",
 			"unit": "psi",
@@ -611,26 +588,49 @@
 		"config": 2,
 		"address": ["0x01", "0x00", "0x00", "0xE5", "0x56"],
 		"ecuparam": [{
-			"header": "DMTL Voltage",
+			"header": "AFR",
 			"unit": "V",
-			"max": 5,
+			"max": 20,
 			"min": 0,
-			"mul": 0.00488,
-			"add": 0,
+			"mul": 0.046568627,
+			"add": 7.3125,
 			"canOn": true,
 			"can": {
 				"messageId": 1554,
-				"uniqueId": 1556,
-				"offset": 5,
+				"uniqueId": 1557,
+				"offset": 2,
 				"length": 2,
-				"canMul": 0.038483733,
+				"canMul": 0.0143549,
 				"canAdd": 0,
 				"canRepeat": false,
 				"canSpeed": 500,
 				"reverseEndianness": true
-			}
-		}]
-	},
+            }
+        },
+        {
+            "repeated": true,
+			"hidden": true,
+            "header": "AFR2",
+            "unit": "V",
+            "max": 20,
+            "min": 0,
+            "mul": 0.046568627,
+            "add": 7.3125,
+            "canOn": true,
+            "can": {
+                "messageId": 1554,
+                "uniqueId": 1557,
+                "offset": 4,
+                "length": 2,
+                "canMul": 0.0143549,
+                "canAdd": 0,
+                "canRepeat": false,
+                "canSpeed": 500,
+                "reverseEndianness": true
+            }
+        }
+      ]
+    },
 	{
 		"config": 1,
 		"address": "34",
